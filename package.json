@@ -1,5 +1,6 @@
 {
   "name": "using-pre-built-react-components-completed",
+  "homepage": "https://wasim-chadhar.github.io/ToDoApp",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -7,6 +8,7 @@
   "dependencies": {
     "@material-ui/core": "4.6.1",
     "@material-ui/icons": "4.5.1",
+    "gh-pages": "^5.0.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-scripts": "3.2.0",
@@ -16,6 +18,8 @@
     "typescript": "3.3.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
